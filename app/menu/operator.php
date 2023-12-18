@@ -7,7 +7,6 @@
         <i class="nav-icon fas fa-tachometer-alt"></i>
         <p>
           Dashboard
-          <span class="right badge badge-danger">New</span>
         </p>
       </a>
     </li>
@@ -32,10 +31,36 @@
             <p>Kompetensi</p>
           </a>
         </li>
+      </ul>
+      <li class="nav-item menu-open">
+      <a href="#" class="nav-link active">
+        <i class="nav-icon fas fa-chart-bar"></i>
+        <p>
+          Manajemen Kinerja
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="index.php?page=data-penilaian-kinerja" class="nav-link">
+          <a href="index.php?page=data-penilaian-kinerja" class="nav-link active">
             <i class="far fa-circle nav-icon"></i>
             <p>Penilaian Kinerja</p>
+          </a>
+        </li>
+      </ul>
+      <li class="nav-item menu-open">
+      <a href="#" class="nav-link active">
+        <i class="nav-icon fas fa-file"></i>
+        <p>
+          Laporan
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="index.php?page=laporan-penilaian" class="nav-link active">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Laporan Penilaian</p>
           </a>
         </li>
       </ul>
