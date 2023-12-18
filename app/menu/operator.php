@@ -42,7 +42,7 @@
       </a>
       <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="index.php?page=data-penilaian-kinerja" class="nav-link active">
+          <a href="index.php?page=penilaian-kinerja" class="nav-link active">
             <i class="far fa-circle nav-icon"></i>
             <p>Penilaian Kinerja</p>
           </a>
