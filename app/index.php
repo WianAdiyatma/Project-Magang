@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+
 session_start();
 if(!$_SESSION['nama']){
   header('Location: ../index.php?session=expired');
@@ -43,8 +44,20 @@ include('header.php'); ?>
         else if ($_GET['page'] == 'data-karyawan') {
           include('data_karyawan.php');
         }
+        else if ($_GET['page'] == 'data-kompetensi') {
+          include('kompetensi.php');
+        }
+        else if ($_GET['page'] == 'data-penilaian-kinerja') {
+          include('penilaian_kinerja.php');
+        }
+         else if ($_GET['page'] == 'laporan-penilaian') {
+          include('laporan.php');
+        }
         else if ($_GET['page'] == 'edit-data') {
           include('edit/edit_data.php');
+        }
+        else if ($_GET['page'] == 'edit-kompetensi') {
+          include('edit/edit_kompetensi.php');
         }
         else{
           include('not_found.php');
