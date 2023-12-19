@@ -8,7 +8,7 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable with default features</h3>
+                <h3 class="card-title text-center"><b>Data Karyawan</b></h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -33,18 +33,18 @@
                     <?php
                     $no = 1;
                     $query = mysqli_query($koneksi, "SELECT * FROM karyawan");
-                    while ($kry = mysqli_fetch_array($query)) {
-                      $no++
+                    while ($lpr = mysqli_fetch_array($query)) {
+                      
                     ?>
                       <tr>
-                        <td><?php echo $kry['id']; ?></td>
-                        <td><?php echo $kry['nama']; ?></td>
-                        <td><?php echo $kry['divisi']; ?></td>
-                        <td><?php echo $kry['jabatan']; ?></td>
-                        <td><?php echo $kry['email']; ?></td>
+                      <td><?php echo $no++; ?></td>
+                        <td><?php echo $lpr['nama']; ?></td>
+                        <td><?php echo $lpr['divisi']; ?></td>
+                        <td><?php echo $lpr['jabatan']; ?></td>
+                        <td><?php echo $lpr['email']; ?></td>
                         <td>
-                          <a onclick="hapus_data(<?php echo $kry['id'];?>)" class="btn btn-sm btn-danger">Hapus</a>
-                          <a href="index.php?page=edit-data&& id=<?php echo $kry['id'];?>" class="btn btn-sm btn-success">Edit</a>
+                          <a onclick="hapus_data(<?php echo $lpr['id'];?>)" class="btn btn-sm btn-danger">Hapus</a>
+                          <a href="index.php?page=edit-data&& id=<?php echo $lpr['id'];?>" class="btn btn-sm btn-success">Edit</a>
                         </td>
                       </tr>
                     <?php } ?>
@@ -65,7 +65,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Large Modal</h4>
+            <h4 class="modal-title">Tambah Karyawan</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>

@@ -1,5 +1,5 @@
-    <!-- Main content -->
-    <section class="content">
+<!-- Main content -->
+ <section class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
@@ -8,7 +8,7 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Kompetensi</h3>
+                <h3 class="card-title">Data Kompetensi</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -20,7 +20,7 @@
                   <thead>
                     <tr>
                     <tr>
-                      <th>No.</th>
+                    <th>No.</th>
                       <th>Kompetensi</th>
                       <th>Aksi</th>
                     </tr>
@@ -43,7 +43,7 @@
                       </tr>
                     <?php } ?>
                   </tbody>
-                </table>
+                  </table>
               </div>
               <!-- /.card-body -->
             </div>
@@ -67,7 +67,7 @@
           <form method="get" action="add/tambah_kompetensi.php">
             <div class="modal-body">
               <div class="form-row">
-                <div class="col">
+              <div class="col">
                   <input type="text" class="form-control" placeholder="Kompetensi" name="kompetensi" required>
                 </div>
               </div>

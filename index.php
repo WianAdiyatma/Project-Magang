@@ -1,10 +1,12 @@
+<script src="https://kit.fontawesome.com/8cfa8d32a8.js" crossorigin="anonymous"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in (v2)</title>
+  <title>Login</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -18,22 +20,22 @@
   <link rel="stylesheet" href="app/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-image: url(bg-pabrik.jpg); background-size:cover">
   <div class="login-box">
     <!-- /.login-logo -->
     <div class="card card-outline card-primary">
       <div class="card-header text-center">
-        <a href="app/index2.html" class="h1"><b>Admin</b>LTE</a>
+        <a href="app/index2.html" class="h1">Login</a>
       </div>
       <div class="card-body">
-        <p class="login-box-msg">Sign in to start your session</p>
+        <p class="login-box-msg">Masuk ke Akun Anda</p>
 
         <form action="conf/autentikasi.php" method="post">
           <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Username" name="username">
             <div class="input-group-append">
               <div class="input-group-text">
-                <span class="fas fa-envelope"></span>
+                <i class="fa-solid fa-user"></i>
               </div>
             </div>
           </div>
@@ -56,7 +58,7 @@
           </div> -->
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" class="btn btn-primary btn-block">Login</button>
+              <button type="submit" class="btn btn-primary btn-block">Masuk</button>
             </div>
             <!-- /.col -->
           </div>
