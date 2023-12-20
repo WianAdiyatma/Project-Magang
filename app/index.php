@@ -44,6 +44,15 @@ include('header.php'); ?>
         else if ($_GET['page'] == 'data-karyawan') {
           include('data_karyawan.php');
         }
+        else if ($_GET['page'] == 'data-divisi') {
+          include('divisi.php');
+        }
+        else if ($_GET['page'] == 'data-tahun-penilaian') {
+          include('tahun_penilaian.php');
+        }
+        else if ($_GET['page'] == 'data-kinerja') {
+          include('kinerja.php');
+        }
         else if ($_GET['page'] == 'data-kompetensi') {
           include('kompetensi.php');
         }
@@ -55,6 +64,15 @@ include('header.php'); ?>
         }
         else if ($_GET['page'] == 'edit-data') {
           include('edit/edit_data.php');
+        }
+        else if ($_GET['page'] == 'edit-divisi') {
+          include('edit/edit_divisi.php');
+        }
+        else if ($_GET['page'] == 'edit-tahun-penilaian') {
+          include('edit/edit_tahun_penilaian.php');
+        }
+        else if ($_GET['page'] == 'edit-kinerja') {
+          include('edit/edit_kinerja.php');
         }
         else if ($_GET['page'] == 'edit-kompetensi') {
           include('edit/edit_kompetensi.php');

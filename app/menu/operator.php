@@ -20,13 +20,31 @@
       </a>
       <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="index.php?page=data-karyawan" class="nav-link active">
+          <a href="index.php?page=data-karyawan" class="nav-link">
             <i class="far fa-circle nav-icon"></i>
             <p>Data Karyawan</p>
           </a>
         </li>
         <li class="nav-item">
-          <a href="index.php?page=data-kompetensi" class="nav-link">
+          <a href="index.php?page=data-divisi" class="nav-link ">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Divisi</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.php?page=data-tahun-penilaian" class="nav-link ">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Tahun Penilaian</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.php?page=data-kinerja" class="nav-link ">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Data Kinerja</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.php?page=data-kompetensi" class="nav-link ">
             <i class="far fa-circle nav-icon"></i>
             <p>Kompetensi</p>
           </a>
@@ -42,7 +60,7 @@
       </a>
       <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="index.php?page=data-penilaian-kinerja" class="nav-link active">
+          <a href="index.php?page=data-penilaian-kinerja" class="nav-link ">
             <i class="far fa-circle nav-icon"></i>
             <p>Penilaian Kinerja</p>
           </a>
@@ -58,7 +76,7 @@
       </a>
       <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="index.php?page=laporan-penilaian" class="nav-link active">
+          <a href="index.php?page=laporan-penilaian" class="nav-link ">
             <i class="far fa-circle nav-icon"></i>
             <p>Laporan Penilaian</p>
           </a>
