@@ -11,7 +11,7 @@
       </a>
     </li>
     <li class="nav-item menu-open">
-      <a href="#" class="nav-link active">
+      <a href="#" class="nav-link ">
         <i class="nav-icon fas fa-database"></i>
         <p>
           Manajemen Data
@@ -20,7 +20,7 @@
       </a>
       <ul class="nav nav-treeview">
         <li class="nav-item">
-          <a href="index.php?page=data-karyawan" class="nav-link">
+          <a href="index.php?page=data-karyawan" class="nav-link ">
             <i class="far fa-circle nav-icon"></i>
             <p>Data Karyawan</p>
           </a>
@@ -51,7 +51,7 @@
         </li>
       </ul>
       <li class="nav-item menu-open">
-      <a href="#" class="nav-link active">
+      <a href="#" class="nav-link ">
         <i class="nav-icon fas fa-chart-bar"></i>
         <p>
           Manajemen Kinerja
@@ -67,7 +67,7 @@
         </li>
       </ul>
       <li class="nav-item menu-open">
-      <a href="#" class="nav-link active">
+      <a href="#" class="nav-link ">
         <i class="nav-icon fas fa-file"></i>
         <p>
           Laporan

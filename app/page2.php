@@ -1,5 +1,4 @@
 <?php
-// page2.php
 
 // Baca data dari JSON
 $json_data = file_get_contents('php://input');
@@ -38,5 +37,4 @@ if (mysqli_query($conn, $sql)) {
 
 // Tutup koneksi
 mysqli_close($conn);
-header('Location: ../index.php?page=penilaian-kinerja');
 ?>

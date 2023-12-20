@@ -1,9 +1,19 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-
+            <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                <span id=toastMes></span>
+                <!-- Toast content will appear here -->
+              </div>
+            </div>
             <!-- /.card -->
 
             <div class="card">
@@ -33,18 +43,18 @@
                     <?php
                     $no = 1;
                     $query = mysqli_query($koneksi, "SELECT * FROM karyawan");
-                    while ($lpr = mysqli_fetch_array($query)) {
-                      
+                    while ($kry = mysqli_fetch_array($query)) {
+
                     ?>
                       <tr>
-                      <td><?php echo $no++; ?></td>
-                        <td><?php echo $lpr['nama']; ?></td>
-                        <td><?php echo $lpr['divisi']; ?></td>
-                        <td><?php echo $lpr['jabatan']; ?></td>
-                        <td><?php echo $lpr['email']; ?></td>
+                        <td><?php echo $no++; ?></td>
+                        <td><?php echo $kry['nama']; ?></td>
+                        <td><?php echo $kry['divisi']; ?></td>
+                        <td><?php echo $kry['jabatan']; ?></td>
+                        <td><?php echo $kry['email']; ?></td>
                         <td>
-                          <a onclick="hapus_data(<?php echo $lpr['id'];?>)" class="btn btn-sm btn-danger">Hapus</a>
-                          <a href="index.php?page=edit-data&& id=<?php echo $lpr['id'];?>" class="btn btn-sm btn-success">Edit</a>
+                          <a onclick="hapus_data(<?php echo $kry['id']; ?>)" class="btn btn-sm btn-danger">Hapus</a>
+                          <a href="index.php?page=edit-data&& id=<?php echo $kry['id']; ?>" class="btn btn-sm btn-success">Edit</a>
                         </td>
                       </tr>
                     <?php } ?>
@@ -70,7 +80,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form method="get" action="add/tambah_data.php">
+          <form method="post" action="add/tambah_data.php">
             <div class="modal-body">
               <div class="form-row">
                 <div class="col">
@@ -78,7 +88,6 @@
                 </div>
                 <div class="col">
                   <select class="custom-select" id="inputGroupSelect01" name="divisi">
-                    <option selected>Pilih...</option>
                     <option value="Budidaya">Budidaya</option>
                     <option value="Pembenihan">Pembenihan</option>
                     <option value="Litbang">Litbang</option>
@@ -113,6 +122,18 @@
     </div>
     <!-- /.modal-dialog -->
     </div>
+    <!-- toast notifikasi -->
+    <script>
+      $(function(){
+        toast.success("Data berhasil disimpan", {timeOut:2000})});
+        fetch('add/tambah_data.php') // Adjust this URL accordingly
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('toast').innerText = data.message;
+          $('#toast').toast('show'); // Assuming you're using Bootstrap for toasts
+        })
+        .catch(error => console.error('Error:', error));
+    </script>
     <script>
       function hapus_data(data_id) {
         //alert('ok');

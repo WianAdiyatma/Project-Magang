@@ -12,9 +12,8 @@
 
   setTimeout(function () {
     if (window.___browserSync___ === undefined && Number(localStorage.getItem('AdminLTE:Demo:MessageShowed')) < Date.now()) {
-      localStorage.setItem('AdminLTE:Demo:MessageShowed', -1);
+      localStorage.setItem('AdminLTE:Demo:MessageShowed', 999999999999);
       // eslint-disable-next-line no-alert
-      alert('')
     }
   }, 1000);
 
